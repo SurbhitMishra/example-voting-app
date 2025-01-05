@@ -2,7 +2,7 @@ pipeline {
     agent { label 'worker' }
 
     environment {
-        ECR_REGISTRY = '241919703477.dkr.ecr.ap-south-1.amazonaws.com/task3' // ECR registry URI
+        ECR_REGISTRY = '241919703477.dkr.ecr.ap-south-1.amazonaws.com' // ECR registry URI
         ECR_REPO = 'task3' // ECR repository name
         DOCKER_TAG = "vote-v${BUILD_NUMBER}" // Unique tag using Jenkins BUILD_NUMBER
     }
